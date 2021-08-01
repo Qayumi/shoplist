@@ -1,0 +1,17 @@
+
+<%= form_for  @users do |users| %>
+<p>
+  <%= users.label :name  %><br />
+  <%= users.text_field  :name %><br />
+
+  <%= users.label :bio  %><br />
+  <%= users.text_field :bio %><br />
+
+  <%= users.label :age  %><br />
+  <%= users.text_field :age %><br />
+
+  <%= users.submit 'Save' %>
+</p>
+
+<%= link_to 'Go back', users_path%>
+<% end %>
